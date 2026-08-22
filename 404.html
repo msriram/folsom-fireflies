@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Habitat Builders</title>
+  <script>
+    (function () {
+      const oldBase = '/folsom-fireflies/';
+      const newBase = 'https://msriram.github.io/folsom-habitat-builders/';
+      const path = location.pathname.startsWith(oldBase)
+        ? location.pathname.slice(oldBase.length)
+        : '';
+      location.replace(newBase + path + location.search + location.hash);
+    }());
+  </script>
+</head>
+<body>
+  <p>The team site has moved to <a href="https://msriram.github.io/folsom-habitat-builders/">Habitat Builders</a>.</p>
+</body>
+</html>
